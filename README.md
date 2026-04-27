@@ -112,7 +112,9 @@ No new TPS samples are sent after the reporter is removed. Old graph data may st
 
 ## Checksums
 
-If the panel shows checksums for the reporter jars, you can compare the installed file with the panel value.
+The panel shows SHA256 checksums for the reporter jars and checks the installed reporter against the version stored by EUGameHost.
+
+When the installed jar matches the expected file, the panel shows a checksum match message next to the installed reporter details.
 
 Example:
 
@@ -120,4 +122,4 @@ Example:
 sha256sum plugins/EUGHTpsReporter.jar
 ```
 
-The hash should match the value shown in the panel for that reporter build.
+The hash should match the value shown in the panel for that reporter build. If it does not match, the jar may have been changed, replaced, or copied from somewhere else.
